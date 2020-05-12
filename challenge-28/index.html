@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" method="GET" data-js="form-cep">
+        <input type="number"  data-js="input-cep" name="cep" id="cep" placeholder="CEP">
+        <button>Buscar</button>
+
+        <div class="dados">
+            <div class="label">
+                <label for="address">Endereço:</label>
+                <label for="district">Bairro: </label>
+                <label for="city">Cidade:</label>
+                <label for="state">Estado: </label>
+            </div>
+            <div class="span">
+                <span data-js="field-adress"></span>
+                <span data-js="field-district"></span>
+                <span data-js="field-city"></span>
+                <span data-js="field-state"></span>
+            </div>
+        </div>
+        <div class="error">
+            <span>Erro ao consultar o CEP: <span data-js="error"></span></span>
+        </div>
+    </form>
+
+    <script src="DOM.js"></script>
+    <script src="challenge-28.js"></script>
+</body>
+</html>
